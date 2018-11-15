@@ -41,7 +41,6 @@ app.get('/hello', (req, res) => {
     res.send('world')
 })
 
-
-app.listen(3003, () => {
-    console.log(`server is running`)
+app.listen(process.env.SERVER_PORT, () => {
+    console.log(`Server Running at Port : ${process.env.SERVER_PORT}`)
 })
